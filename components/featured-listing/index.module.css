@@ -1,0 +1,31 @@
+.banner {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    width: 100%;
+    max-width: 768px;
+    height: 326px;
+    margin: 20px auto;
+}
+
+.bannerMain {
+    flex: 3;
+}
+
+.bannerImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bannerSecondary {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.bannerSecondaryImage {
+    flex: auto;
+    width: 100%;
+}

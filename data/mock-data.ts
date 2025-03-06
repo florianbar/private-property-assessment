@@ -5,9 +5,9 @@ export const MOCK_LISTING = {
         logo: './assets/agent-images/ikhayaProp.webp',
     },
     gallery: [
-        './assets/property-images/property-1.webp',
-        './assets/property-images/property-2.webp',
-        './assets/property-images/property-3.webp',
+        '/assets/property-images/Image-1.webp',
+        '/assets/property-images/Image-2.webp',
+        '/assets/property-images/Image-3.webp',
     ],
     bedrooms: 3,
     bathrooms: 2,
