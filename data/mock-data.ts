@@ -1,0 +1,28 @@
+export const MOCK_LISTING = {
+    agent: {
+        name: 'Thato Sithole',
+        image: './assets/agent-images/thato-sithole.webp',
+        logo: './assets/agent-images/ikhayaProp.webp',
+    },
+    gallery: [
+        './assets/property-images/property-1.webp',
+        './assets/property-images/property-2.webp',
+        './assets/property-images/property-3.webp',
+    ],
+    bedrooms: 3,
+    bathrooms: 2,
+    garages: 2,
+    erfSize: 880,
+    floorSize: 320,
+    address: '12 The Avenue, Anne-marie Road',
+    suburb: 'Durbanville',
+    city: 'Cape Town',
+    province: 'Western Cape',
+    type: 'Apartment',
+    price: 2995000,
+    priceIteration: 'per day',
+    reduced: true,
+    promoted: true,
+    retirement: true,
+    hdMedia: true,
+};
