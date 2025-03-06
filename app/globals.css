@@ -1,0 +1,151 @@
+:root {
+  --brand-secondary: #0a6d99;
+  --brand-agency: #ffe996;
+  --neutral-900: #0d1d28;
+  --neutral-800: #202e37;
+  --neutral-700: #30414d;
+  --neutral-500: #637482;
+  --notification-orange: #e46b26;
+  --notification-green: #059f65;
+  --neutral-400: #97a4af;
+  --neutral-200: #e9edf0;
+  --neutral-white: #fff;
+  --highlight: #a4d8f3;
+
+  --font-inter: "Inter", sans-serif;
+}
+
+.Heading-2 {
+  font-family: var(--font-inter);
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+
+.Heading-2-Mobile {
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+
+.BaseBold {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+
+.BaseSemi-Bold {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+
+.BaseRegular {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+
+.SmallBold {
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+
+.SmallSemi-Bold {
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+
+.SmallRegular {
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+
+.XSmallRegular {
+  font-family: var(--font-inter);
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+
+
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
