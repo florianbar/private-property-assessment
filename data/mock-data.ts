@@ -1,8 +1,8 @@
 export const MOCK_LISTING = {
     agent: {
         name: 'Thato Sithole',
-        image: './assets/agent-images/thato-sithole.webp',
-        logo: './assets/agent-images/ikhayaProp.webp',
+        image: '/assets/agent-images/thato-sitole.webp',
+        logo: '/assets/agent-images/ikhayaProp.webp',
     },
     gallery: [
         '/assets/property-images/Image-1.webp',

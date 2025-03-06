@@ -1,0 +1,49 @@
+.header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 8px;
+    background-color: var(--brand-agency);
+}
+
+.headerLogo {
+    width: 185px;
+    height: auto;
+}
+
+.headerAgent {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.headerAgentName {
+    text-align: right;
+    color: var(--neutral-900);
+}
+
+.headerAgentImage {
+    width: 64px;
+    height: 64px;
+    margin: 24px 8px 0 0;
+    border-radius: 50%;
+    border: 1px solid var(--neutral-white);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 480px) {
+    .header {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .headerLogo {
+        width: 169px;
+    }
+
+    .headerAgentName {
+        display: none;
+    }
+}

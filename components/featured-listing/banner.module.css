@@ -1,0 +1,43 @@
+.banner {
+    display: flex;
+    gap: 1px;
+    height: 326px;
+}
+
+.bannerMain {
+    width: 65%;
+}
+
+.bannerImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bannerSecondary {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.bannerSecondaryImage {
+    flex: auto;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .bannerMain {
+        width: 100%;
+        height: 232px;
+    }
+
+    .bannerSecondary {
+        flex-direction: row;
+        height: 119px;
+    }
+}
