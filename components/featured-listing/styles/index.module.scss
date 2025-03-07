@@ -6,8 +6,6 @@
     margin: 0 auto;
 
     @media (max-width: $breakpoint-sm) {
-        & {
-            padding: var(--space-lg);
-        }
+        padding: var(--space-lg);
     }
 }
