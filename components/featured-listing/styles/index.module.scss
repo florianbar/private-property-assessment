@@ -7,7 +7,7 @@
 
     @media (max-width: $breakpoint-sm) {
         & {
-            padding: 16px;
+            padding: var(--space-lg);
         }
     }
 }

@@ -1,7 +1,7 @@
 .badge {
     display: inline-block;
-    padding: 4px 8px;
-    border-radius: 4px;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--space-xs);
     background-color: #f1f4f5;
     font-family: var(--font-inter);
     font-size: 12px;
@@ -12,13 +12,13 @@
     letter-spacing: normal;
 
     &--sizeSm {
-        padding: 2px 4px;
+        padding: 2px var(--space-xs);
         font-size: 10px;
         font-weight: 400;
     }
 
     &--sizeLg {
-        padding: 2px 8px;
+        padding: 2px var(--space-sm);
         font-size: 14px;
         font-weight: 800;
     }

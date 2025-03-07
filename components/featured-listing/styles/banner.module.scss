@@ -22,14 +22,14 @@
 
     .badges {
         position: absolute;
-        top: 8px;
-        left: 8px;
-        gap: 4px;
+        top: var(--space-sm);
+        left: var(--space-sm);
+        gap: var(--space-xs);
         display: flex;
 
         &--bottom {
             top: auto;
-            bottom: 8px;
+            bottom: var(--space-sm);
         }
     }
 

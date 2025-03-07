@@ -1,6 +1,7 @@
 @import './sass/variables.module';
 
 :root {
+  // Colors
   --brand-secondary: #0a6d99;
   --brand-agency: #ffe996;
   --neutral-900: #0d1d28;
@@ -15,7 +16,14 @@
   --neutral-white: #fff;
   --highlight: #a4d8f3;
 
+  // Fonts
   --font-inter: "Inter", Arial, Helvetica, sans-serif;
+
+  // Spacing
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
 }
 
 .Heading-2 {
