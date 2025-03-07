@@ -28,16 +28,6 @@
   letter-spacing: normal;
 }
 
-.Heading-2-Mobile {
-  font-family: var(--font-inter);
-  font-size: 20px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.3;
-  letter-spacing: normal;
-}
-
 .BaseBold {
   font-family: var(--font-inter);
   font-size: 14px;
@@ -120,4 +110,26 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+.showOnMdOnly {
+  display: none;
+}
+
+/* Tablet Only */
+@media (min-width: 480px) and (max-width: 768px) {
+  .hideOnMdOnly {
+    display: none;
+  }
+
+  .showOnMdOnly {
+    display: block;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .Heading-2 {
+    font-size: 20px;
+  }
 }
