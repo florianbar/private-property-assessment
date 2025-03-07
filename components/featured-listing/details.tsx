@@ -1,6 +1,7 @@
-import style from './styles/details.module.css';
-
 import { getFormattedPrice } from '@/utils/numbers'; 
+import DetailsIcons from './detailsIcons';
+import DetailsBadge from './detailsBadge';
+import style from './styles/details.module.css';
 
 interface FeaturedListingDetailsProps {
     price: number;
@@ -39,25 +40,37 @@ export default function FeaturedListingDetails({
             </p>
             <div className={style.detailsInfo}>
                 <div className={`BaseRegular ${style.detailsInfoLocation}`}>
-                    <div className={style.detailsInfoDescription}>
+                    <p className={style.detailsInfoDescription}>
                         {bedrooms} Bedroom {type}{" "}
                         <span className="hideOnMdOnly">in <strong>{suburb}</strong></span>
-                    </div>
-                    <div className={style.detailsInfoAddress}>
-                        <div className="showOnMdOnly">
+                    </p>
+                    <p className={style.detailsInfoAddress}>
+                        <span className="showOnMdOnly">
                             <strong>{suburb}</strong>
-                        </div>
-                        <div className={style.detailsInfoAddressText}>
+                        </span>
+                        <span className={style.detailsInfoAddressText}>
                             {address}
-                        </div>
-                    </div>
+                        </span>
+                    </p>
                 </div>
-                <div>
-                    <div>Bedrooms {bedrooms}</div>
-                    <div>Bathrooms {bathrooms}</div>
-                    <div>Garages {garages}</div>
-                    <div>Erf Size {erfSize} m²</div>
-                    <div>Floor Size {floorSize} m²</div>
+                <DetailsIcons
+                    bedrooms={bedrooms}
+                    bathrooms={bathrooms}
+                    garages={garages}
+                    erfSize={erfSize}
+                    floorSize={floorSize}
+                />
+                <div className="showOnSmOnly">
+                    <div className={style.detailsInfoBadges}>
+                        <DetailsBadge 
+                            label="Erf" 
+                            value={`${erfSize} m²`} 
+                        />
+                        <DetailsBadge 
+                            label="Floor" 
+                            value={`${floorSize} m²`} 
+                        />
+                    </div>
                 </div>
             </div>
         </footer>

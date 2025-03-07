@@ -21,7 +21,6 @@ export default function FeaturedListing({ listing }: FeaturedListingProps) {
         floorSize,
         address,
         suburb,
-        province,
         type,
     } = listing;
 
