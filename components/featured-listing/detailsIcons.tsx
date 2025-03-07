@@ -1,4 +1,4 @@
-import DetailsIcon from './detailsIcon';
+import IconText from '@/components/icon-text';
 import style from './styles/details.module.scss';
 
 interface FeaturedListingDetailsIconsProps {
@@ -18,28 +18,28 @@ export default function FeaturedListingDetailsIcons({
 }: FeaturedListingDetailsIconsProps) {
     return (
         <div className={style.icons}>
-            <DetailsIcon 
+            <IconText 
                 text={bedrooms.toString()} 
                 imageUrl="/assets/icons/bedrooms.svg" 
                 imageAlt="Bedrooms" 
             />
-            <DetailsIcon 
+            <IconText 
                 text={bathrooms.toString()} 
                 imageUrl="/assets/icons/bathroom.svg" 
                 imageAlt="Bathrooms" 
             />
-            <DetailsIcon 
+            <IconText 
                 text={garages.toString()} 
                 imageUrl="/assets/icons/car.svg" 
                 imageAlt="Cars"
             />
-            <DetailsIcon 
+            <IconText 
                 text={erfSize + " m²"} 
                 imageUrl="/assets/icons/erf-size.svg" 
                 imageAlt="Erf Size"
                 className="hideOnSm"
             />
-            <DetailsIcon 
+            <IconText 
                 text={floorSize + " m²"} 
                 imageUrl="/assets/icons/property-size.svg" 
                 imageAlt="Property Size"

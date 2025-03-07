@@ -1,20 +1,20 @@
 import Image from 'next/image';
 
-import style from './styles/details.module.scss';
+import style from './index.module.scss';
 
-interface FeaturedListingDetailsIconProps {
+interface IconTextProps {
     text: string;
     imageUrl: string;
     imageAlt: string;
     className?: string;
 }
 
-export default function FeaturedListingDetailsIcon({ 
+export default function IconText({ 
     text, 
     imageUrl, 
     imageAlt, 
-    className = "" 
-}: FeaturedListingDetailsIconProps) {
+    className = ""
+}: IconTextProps) {
     return (
         <div className={`${style.icon} ${className}`}>
             <Image 

@@ -1,0 +1,14 @@
+.icon {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--neutral-800);
+
+    img {
+        opacity: 0.5;
+    }
+
+    strong {
+        color: var(--neutral-800);
+    }
+}
