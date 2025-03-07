@@ -20,7 +20,7 @@ export const MOCK_LISTING = {
     province: 'Western Cape',
     type: 'Apartment',
     price: 2995000,
-    priceIteration: 'per day',
+    payment: 'per day',
     reduced: true,
     promoted: true,
     retirement: true,

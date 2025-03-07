@@ -1,4 +1,4 @@
-import style from './banner.module.css';
+import style from './styles/banner.module.css';
 
 interface FeaturedListingBannerProps {
     images: string[];
@@ -6,7 +6,7 @@ interface FeaturedListingBannerProps {
 
 export default function FeaturedListingBanner({ images } : FeaturedListingBannerProps) {
     return (
-        <header className={style.banner}>
+        <main className={style.banner}>
             <div 
                 className={`${style.bannerMain} ${style.bannerImage}`} 
                 style={{ backgroundImage: `url(${images[0]})` }}
@@ -21,6 +21,6 @@ export default function FeaturedListingBanner({ images } : FeaturedListingBanner
                     style={{ backgroundImage: `url(${images[2]})` }}
                 />
             </div>
-        </header>
+        </main>
     );
 }
