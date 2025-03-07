@@ -1,3 +1,5 @@
+@import './sass/variables.module';
+
 .details {
     position: relative;
     display: flex;
@@ -6,7 +8,7 @@
     gap: 16px;
     padding: 16px;
 
-    @media (max-width: 480px) {
+    @media (max-width: $breakpoint-sm) {
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -24,7 +26,7 @@
 }
 
 .payment {
-    @media (max-width: 480px) {
+    @media (max-width: $breakpoint-sm) {
         font-size: 14px;
     }
 }
@@ -34,11 +36,11 @@
     margin-top: 3px;
     color: var(--neutral-800);
 
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-md) {
         width: 60%;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: $breakpoint-sm) {
         width: 100%;
     }
 }
@@ -46,12 +48,12 @@
 .location {
     display: flex;
 
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-md) {
         flex-direction: column;
         gap: 6px;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: $breakpoint-sm) {
         gap: 0;
     }
 }
@@ -61,7 +63,7 @@
     padding-right: 8px;
     border-right: 1px solid var(--neutral-400);
 
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-md) {
         margin-right: 0;
         padding-right: 0;
         border-right: none;
@@ -69,19 +71,19 @@
 }
 
 .address {
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-md) {
         display: flex;
     }
 }
 
 .addressText {
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-md) {
         margin-left: 8px;
         padding-left: 8px;
         border-left: 1px solid var(--neutral-400);
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: $breakpoint-sm) {
         margin-left: 0;
         padding-left: 0;
         border-left: none;

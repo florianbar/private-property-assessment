@@ -1,9 +1,11 @@
+@import './sass/variables.module';
+
 .container {
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
 
-    @media (max-width: 480px) {
+    @media (max-width: $breakpoint-sm) {
         & {
             padding: 16px;
         }
