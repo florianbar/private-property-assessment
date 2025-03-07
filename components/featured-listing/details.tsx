@@ -1,7 +1,7 @@
 import { getFormattedPrice } from '@/utils/numbers';
 import LabelBadge from '@/components/label-badge'; 
 import DetailsIcons from './detailsIcons';
-import Badge, { BADGE_SIZES } from '@/components/badge';
+import PromotedBadge from './promotedBadge';
 import style from './styles/details.module.scss';
 
 interface FeaturedListingDetailsProps {
@@ -78,9 +78,7 @@ export default function FeaturedListingDetails({
             </div>
             {promoted && (
                 <div className={`${style.detailsPromotedBadge} hideOnSm`}>
-                    <Badge size={BADGE_SIZES.small}>
-                        Promoted
-                    </Badge>
+                    <PromotedBadge />
                 </div>
             )}
         </footer>

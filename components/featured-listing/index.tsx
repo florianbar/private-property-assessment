@@ -2,7 +2,7 @@ import { MOCK_LISTING } from '@/data/mock-data';
 import Header from './header';
 import Banner from './banner';
 import Details from './details';
-import Badge, { BADGE_SIZES } from '@/components/badge';
+import PromotedBadge from './promotedBadge';
 import style from './styles/index.module.scss';
 
 interface FeaturedListingProps {
@@ -33,9 +33,7 @@ export default function FeaturedListing({ listing }: FeaturedListingProps) {
         <div className={style.container}>
             {promoted && (
                 <div className="showOnSmOnly">
-                    <Badge size={BADGE_SIZES.small}>
-                        Promoted
-                    </Badge>
+                    <PromotedBadge />
                 </div>
             )}
 
