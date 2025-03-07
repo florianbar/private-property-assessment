@@ -1,6 +1,6 @@
-import { getFormattedPrice } from '@/utils/numbers'; 
+import { getFormattedPrice } from '@/utils/numbers';
+import LabelBadge from '@/components/label-badge'; 
 import DetailsIcons from './detailsIcons';
-import DetailsBadge from './detailsBadge';
 import Badge, { BADGE_SIZES } from '@/components/badge';
 import style from './styles/details.module.scss';
 
@@ -65,11 +65,11 @@ export default function FeaturedListingDetails({
                 />
                 <div className="showOnSmOnly">
                     <div className={style.badges}>
-                        <DetailsBadge 
+                        <LabelBadge 
                             label="Erf" 
                             value={`${erfSize} m²`} 
                         />
-                        <DetailsBadge 
+                        <LabelBadge 
                             label="Floor" 
                             value={`${floorSize} m²`} 
                         />
