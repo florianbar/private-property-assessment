@@ -77,7 +77,7 @@ export default function FeaturedListingDetails({
                 </div>
             </div>
             {promoted && (
-                <div className={`${style.detailsPromotedBadge} hideOnSm`}>
+                <div className={`${style.promotedBadge} hideOnSm`}>
                     <PromotedBadge />
                 </div>
             )}
