@@ -6,6 +6,22 @@
 
 .bannerMain {
     width: 65%;
+    position: relative;
+}
+
+.bannerBadges {
+    position: absolute;
+    left: 8px;
+    gap: 4px;
+    display: flex;
+}
+
+.bannerBadgesTop {
+    top: 8px;
+}
+
+.bannerBadgesBottom {
+    bottom: 8px;
 }
 
 .bannerImage {

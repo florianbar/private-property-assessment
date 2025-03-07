@@ -1,4 +1,5 @@
 .details {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -86,6 +87,12 @@
 
 .detailsInfoBadgeValue {
     color: var(--neutral-800);
+}
+
+.detailsPromotedBadge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
 }
 
 /* Tablet */

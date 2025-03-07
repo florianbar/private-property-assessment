@@ -1,6 +1,7 @@
 import { getFormattedPrice } from '@/utils/numbers'; 
 import DetailsIcons from './detailsIcons';
 import DetailsBadge from './detailsBadge';
+import Badge, { BADGE_SIZES } from '@/components/badge';
 import style from './styles/details.module.css';
 
 interface FeaturedListingDetailsProps {
@@ -14,6 +15,7 @@ interface FeaturedListingDetailsProps {
     address: string;
     suburb: string;
     type: string;
+    promoted?: boolean;
 }
 
 export default function FeaturedListingDetails({ 
@@ -27,6 +29,7 @@ export default function FeaturedListingDetails({
     address,
     suburb,
     type,
+    promoted,
 }: FeaturedListingDetailsProps) {
     return (
         <footer className={style.details}>
@@ -73,6 +76,13 @@ export default function FeaturedListingDetails({
                     </div>
                 </div>
             </div>
+            {promoted && (
+                <div className={`${style.detailsPromotedBadge} hideOnSm`}>
+                    <Badge size={BADGE_SIZES.small}>
+                        Promoted
+                    </Badge>
+                </div>
+            )}
         </footer>
     );
 }
