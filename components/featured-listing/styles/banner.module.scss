@@ -1,0 +1,55 @@
+.banner {
+    display: flex;
+    gap: 1px;
+    height: 326px;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+}
+
+.image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.primary {
+    width: 65%;
+    position: relative;
+
+    .badges {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        gap: 4px;
+        display: flex;
+
+        &--bottom {
+            top: auto;
+            bottom: 8px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+        height: 232px;
+    }
+}
+
+.secondary {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+    .image {
+        flex: auto;
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: row;
+        height: 119px;
+    }
+}

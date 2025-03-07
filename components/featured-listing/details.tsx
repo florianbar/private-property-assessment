@@ -2,7 +2,7 @@ import { getFormattedPrice } from '@/utils/numbers';
 import DetailsIcons from './detailsIcons';
 import DetailsBadge from './detailsBadge';
 import Badge, { BADGE_SIZES } from '@/components/badge';
-import style from './styles/details.module.css';
+import style from './styles/details.module.scss';
 
 interface FeaturedListingDetailsProps {
     price: number;
@@ -33,25 +33,25 @@ export default function FeaturedListingDetails({
 }: FeaturedListingDetailsProps) {
     return (
         <footer className={style.details}>
-            <p className={style.detailsPrice}>
+            <p className={style.price}>
                 <span className="Heading-2">
                     R {getFormattedPrice(price)}
                 </span>{" "}
-                <span className={`SmallBold ${style.detailsPricePayment}`}>
+                <span className={`SmallBold ${style.payment}`}>
                     {payment}
                 </span>
             </p>
-            <div className={style.detailsInfo}>
-                <div className={`BaseRegular ${style.detailsInfoLocation}`}>
-                    <p className={style.detailsInfoDescription}>
+            <div className={style.info}>
+                <div className={`BaseRegular ${style.location}`}>
+                    <p className={style.description}>
                         {bedrooms} Bedroom {type}{" "}
                         <span className="hideOnMdOnly">in <strong>{suburb}</strong></span>
                     </p>
-                    <p className={style.detailsInfoAddress}>
+                    <p className={style.address}>
                         <span className="showOnMdOnly">
                             <strong>{suburb}</strong>
                         </span>
-                        <span className={style.detailsInfoAddressText}>
+                        <span className={style.addressText}>
                             {address}
                         </span>
                     </p>
@@ -64,7 +64,7 @@ export default function FeaturedListingDetails({
                     floorSize={floorSize}
                 />
                 <div className="showOnSmOnly">
-                    <div className={style.detailsInfoBadges}>
+                    <div className={style.badges}>
                         <DetailsBadge 
                             label="Erf" 
                             value={`${erfSize} m²`} 

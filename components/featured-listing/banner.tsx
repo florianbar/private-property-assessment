@@ -1,5 +1,5 @@
 import Badge, { BADGE_SIZES, BADGE_COLORS } from '@/components/badge';
-import style from './styles/banner.module.css';
+import style from './styles/banner.module.scss';
 
 interface FeaturedListingBannerProps {
     images: string[];
@@ -17,17 +17,17 @@ export default function FeaturedListingBanner({
     return (
         <main className={style.banner}>
             <div 
-                className={`${style.bannerMain} ${style.bannerImage}`} 
+                className={`${style.primary} ${style.image}`} 
                 style={{ backgroundImage: `url(${images[0]})` }}
             >
-                <div className={`${style.bannerBadges} ${style.bannerBadgesTop}`}>
+                <div className={style.badges}>
                     {reduced && (
                         <Badge size={BADGE_SIZES.large} color={BADGE_COLORS.green}>
                             Reduced
                         </Badge>
                     )}
                 </div>
-                <div className={`${style.bannerBadges} ${style.bannerBadgesBottom}`}>
+                <div className={`${style.badges} ${style["badges--bottom"]}`}>
                     {hdMedia && (
                         <Badge color={BADGE_COLORS.orange}>
                             HD Media
@@ -40,13 +40,13 @@ export default function FeaturedListingBanner({
                     )}
                 </div>
             </div>
-            <div className={style.bannerSecondary}>
+            <div className={style.secondary}>
                 <div
-                    className={`${style.bannerSecondaryImage} ${style.bannerImage}`} 
+                    className={style.image}
                     style={{ backgroundImage: `url(${images[1]})` }}
                 />
                 <div
-                    className={`${style.bannerSecondaryImage} ${style.bannerImage}`} 
+                    className={style.image}
                     style={{ backgroundImage: `url(${images[2]})` }}
                 />
             </div>

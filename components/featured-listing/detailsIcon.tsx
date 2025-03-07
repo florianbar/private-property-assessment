@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import style from './styles/details.module.css';
+import style from './styles/details.module.scss';
 
 interface FeaturedListingDetailsIconProps {
     text: string;
@@ -16,14 +16,14 @@ export default function FeaturedListingDetailsIcon({
     className = "" 
 }: FeaturedListingDetailsIconProps) {
     return (
-        <div className={`${style.detailsInfoIcon} ${className}`}>
+        <div className={`${style.icon} ${className}`}>
             <Image 
                 src={imageUrl} 
                 alt={imageAlt}
                 width={24} 
                 height={24}
             />
-            <strong className={`BaseBold ${style.detailsInfoIconText}`}>
+            <strong className={`BaseBold ${style.iconText}`}>
                 {text}
             </strong>
         </div>

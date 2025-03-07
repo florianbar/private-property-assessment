@@ -1,4 +1,4 @@
-import style from './styles/details.module.css';
+import style from './styles/details.module.scss';
 
 interface FeaturedListingDetailsBadgeProps {
     label: string;
@@ -7,11 +7,11 @@ interface FeaturedListingDetailsBadgeProps {
 
 export default function FeaturedListingDetailsBadge({ label, value }: FeaturedListingDetailsBadgeProps) {
     return (
-        <span className={style.detailsInfoBadge}>
-            <span className={`SmallRegular ${style.detailsInfoBadgeLabel}`}>
+        <span className={style.badge}>
+            <span className={`SmallRegular ${style.badgeLabel}`}>
                 {label}
             </span>{" "}
-            <span className={`BaseBold ${style.detailsInfoBadgeValue}`}>
+            <span className={`BaseBold ${style.badgeValue}`}>
                 {value}
             </span>
         </span>

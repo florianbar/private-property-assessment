@@ -1,4 +1,4 @@
-import style from './index.module.css';
+import style from './index.module.scss';
 
 export const BADGE_SIZES = {
     small: "sm",

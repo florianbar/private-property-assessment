@@ -7,44 +7,42 @@
     height: 60px;
     padding: 8px;
     background-color: var(--brand-agency);
+
+    @media (max-width: 480px) {
+        margin-top: 8px;
+        border-radius: 8px 8px 0 0;
+    }
 }
 
-.headerLogo {
+.logo {
     width: 185px;
     height: auto;
+
+    @media (max-width: 480px) {
+        width: 169px;
+    }
 }
 
-.headerAgent {
+.agent {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.headerAgentName {
+.agentName {
     text-align: right;
     color: var(--neutral-900);
+
+    @media (max-width: 480px) {
+        display: none;
+    }
 }
 
-.headerAgentImage {
+.agentImage {
     width: 64px;
     height: 64px;
     margin: 24px 8px 0 0;
     border-radius: 50%;
     border: 1px solid var(--neutral-white);
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
-}
-
-@media (max-width: 480px) {
-    .header {
-        margin-top: 8px;
-        border-radius: 8px 8px 0 0;
-    }
-
-    .headerLogo {
-        width: 169px;
-    }
-
-    .headerAgentName {
-        display: none;
-    }
 }

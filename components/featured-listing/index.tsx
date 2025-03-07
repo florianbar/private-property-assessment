@@ -3,7 +3,7 @@ import Header from './header';
 import Banner from './banner';
 import Details from './details';
 import Badge, { BADGE_SIZES } from '@/components/badge';
-import style from './styles/index.module.css';
+import style from './styles/index.module.scss';
 
 interface FeaturedListingProps {
     listing: typeof MOCK_LISTING;

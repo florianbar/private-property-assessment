@@ -1,5 +1,5 @@
 import DetailsIcon from './detailsIcon';
-import style from './styles/details.module.css';
+import style from './styles/details.module.scss';
 
 interface FeaturedListingDetailsIconsProps {
     bedrooms: number;
@@ -17,7 +17,7 @@ export default function FeaturedListingDetailsIcons({
     floorSize,
 }: FeaturedListingDetailsIconsProps) {
     return (
-        <div className={style.detailsInfoIcons}>
+        <div className={style.icons}>
             <DetailsIcon 
                 text={bedrooms.toString()} 
                 imageUrl="/assets/icons/bedrooms.svg" 
